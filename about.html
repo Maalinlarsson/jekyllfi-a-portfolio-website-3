@@ -1,0 +1,42 @@
+---
+layout: default
+team:
+ - name: Pennanen
+   bio: The best guy
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
+   profile_image: /images/pennanen.jpeg
+ - name: Pirjo
+   bio: The fabolous parkour penguin
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
+   profile_image: /images/pertti-01.jpeg
+ - name: Pertti
+   bio: The thoughest penguin on earth
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
+   profile_image: /images/pertti-02.jpeg
+---
+
+<!---------------- Banner section ---------------->
+<section class="grid tall-60 bg-green">
+    <div class="col-5-middle editable padded-md">
+        <h2> Meet our growing family </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minima nisi cum? Ipsa saepe, minus, sit amet ipsam impedit asperiores quidem numquam expedita temporibus cum. Aliquam ipsum illo eos sed. </p>
+    </div>
+    <div class="col-7 bg-image bg-plant">
+    </div>
+</section>
+
+<!---------------- Team members section ---------------->
+<section class="padded-md">
+
+    {% for person in page.team %}
+        <div class="grid">
+            <div class="col-5">
+                <img src=" {{ person.profile_image }} ">
+                <h3> {{ person.name }} </h3>
+                <p> <strong> {{ person.bio }} </strong> </p>
+                <p> {{ person.description }} </p>
+            </div>
+            <div class="col-7"></div>
+        </div>
+    {% endfor %}
+</section>
