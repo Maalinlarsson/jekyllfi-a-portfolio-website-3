@@ -11,16 +11,7 @@ layout: default
 </section>
 
 <!---------------- Newsletter section ---------------->
-<section class="bg-dark padded-2 center text-light grid-middle-center">
-    <div class="col-4_xs-6">
-        <p> Sign up to our newsletter to access free design resources. </p>
-    </div>
-    <div class="col-1_sm-2 arrow">
-        <a href="#newsletter">
-            <img src="/images/right-arrow.svg">
-        </a>
-    </div>
-</section>
+{% include newsletter-signup.html %}
 
 <!---------------- Icon section ---------------->
 <section class="grid padded-md center icon-section" id="why-us">
@@ -94,8 +85,8 @@ layout: default
 <section class="padded-md bg-rust projects" id="projects">
     <h2 class="center"> Recent Projects </h2>
 
-    {% for project in site.projects %}
-    <div class="grid">
+    {% for project in site.projects limit:2 %}
+    <div class="grid flex-flip-alternate">
 
         <div class="col-5_sm-12-middle padded-md">
             <h3> {{ project.title }} </h3>

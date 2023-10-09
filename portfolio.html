@@ -2,15 +2,16 @@
 layout: default
 ---
 
+<!---------------- Portfolio grid ---------------->
 <section class="padded-md bg-green grid">
     <div class="col-9 text-light padded-b">
         <h2> We design & create but if you have a design of your own, let us know. </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam beatae tempore, aliquam nihil illum facere, consequatur reprehenderit voluptates quod harum accusantium. Suscipit, maiores sint voluptatem impedit esse provident distinctio consequatur! </p>
     </div>
 
-    {% for project in site.projects %}
+    {% for project in site.projects limit:5 offset:1 %}
 
-    <div class="col-7_sm-12-middle">
+    <div class="col-7_sm-12-middle margin-b-2">
         <div class="bg-image landscape" style="background-image: url('{{ project.featured_image }}')">
         </div>
     </div>
@@ -23,5 +24,33 @@ layout: default
     </div>
 
     {% endfor %}
+
+</section>
+
+<!---------------- Newsletter section ---------------->
+{% include newsletter-signup.html %}
+
+<!---------------- Featured projects section ---------------->
+<section class="padded-md">
+    
+    <h2 class="center"> Featured Projects </h2>
+    
+    <div class="capped-width">
+        <div class="bg-image landscape"style="background-image: url('{{ project.featured_image }}')">
+        </div>
+        <div class="grid-spaceBetween">
+            <div class="col-5 padded-1">
+                <h3> {{ project.title }} </h3>
+                <p class="emphasis"> {{ project.description }} </p>
+            </div>
+            <div class="col-4 padded-1">
+                <p class="emphasis"> Design by: {{ project.design-by }} </p>
+                <p class="emphasis"> Build by: {{ project.build-by }} </p>
+                <a href=" {{ project-live_url }} " class="button" target="_blank"> View live site </a>
+            </div>
+        </div>
+
+    {% endfor %}
+    </div>
 
 </section>
