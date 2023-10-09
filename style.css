@@ -95,7 +95,7 @@ html { scroll-behavior: smooth; }
 
 .capped-width { 
     max-width: 1000px;
-margin: auto;
+    margin: auto;
 }
 
 .capped-width-narrow {
