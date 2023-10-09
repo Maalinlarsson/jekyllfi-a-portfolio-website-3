@@ -172,11 +172,17 @@ a:hover { color: #a2745c; }
     font-size: 0.9rem;
 }
 
-.arrow img {
+.right-arrow {
+    margin-top: 0.4rem;
+    max-width: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* .right-arrow {
     margin-top: 0.6rem;
     max-width: 55%;
     margin-left: -3vw;
-}
+} */
 
 .emphasis {
     font-size: 1.1rem;
