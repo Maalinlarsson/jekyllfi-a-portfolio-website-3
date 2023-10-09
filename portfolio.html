@@ -36,6 +36,8 @@ layout: default
     <h2 class="center"> Featured Projects </h2>
     
     <div class="capped-width">
+        {% for project in site.projects limit:1 %}
+
         <div class="bg-image landscape"style="background-image: url('{{ project.featured_image }}')">
         </div>
         <div class="grid-spaceBetween">
@@ -50,7 +52,7 @@ layout: default
             </div>
         </div>
 
-    {% endfor %}
+        {% endfor %}
     </div>
 
 </section>
