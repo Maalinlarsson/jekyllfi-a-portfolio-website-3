@@ -2,21 +2,29 @@
 layout: default
 banner_image: /images/plant.jpg
 team:
- - name: Pennanen
-   bio: The best guy
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
-   profile_image: /images/pennanen.jpeg
- - name: Pirjo
-   bio: The fabolous parkour penguin
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
-   profile_image: /images/pirjo.jpg
- - name: Pertti
-   bio: The thoughest penguin on earth
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
-   profile_image: /images/pertti-02.jpeg
+   -
+      name: Pertti
+      bio: The thoughest penguin on earth
+      description: >-
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+         maiores, cupiditate et.
+      profile_image: /images/pertti-02.jpeg
+   -
+      name: Pennanen
+      bio: The best guy
+      description: >-
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+         maiores, cupiditate et.
+      profile_image: /images/pennanen.jpeg
+   -
+      name: Pirjo
+      bio: The fabolous parkour penguin
+      description: >-
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+         maiores, cupiditate et.
+      profile_image: /images/pirjo.jpg
 about-video-id: SECcXUlxcYs
 ---
-
 <!---------------- Banner section ---------------->
 <section class="grid tall-60 bg-green">
     <div class="col-5-middle editable padded-md">
@@ -35,7 +43,7 @@ about-video-id: SECcXUlxcYs
 
         <div class="grid flex-flip-alternate">
             <div class="col-5 padded-1">
-                <img src=" {{ person.profile_image }} " class="profile-picture">
+                <img src=" {{ person.profile_image }} " class="profile-picture" />
             </div>
             <div class="col-7-middle padded-2">
                 <h3> Meet {{ person.name }} </h3>
