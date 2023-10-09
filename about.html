@@ -1,5 +1,6 @@
 ---
 layout: default
+banner_image: /images/plant.jpg
 team:
  - name: Pennanen
    bio: The best guy
@@ -13,6 +14,7 @@ team:
    bio: The thoughest penguin on earth
    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias maiores, cupiditate et.
    profile_image: /images/pertti-02.jpeg
+about-video-id: SECcXUlxcYs
 ---
 
 <!---------------- Banner section ---------------->
@@ -21,7 +23,7 @@ team:
         <h2> Meet our growing family </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minima nisi cum? Ipsa saepe, minus, sit amet ipsam impedit asperiores quidem numquam expedita temporibus cum. Aliquam ipsum illo eos sed. </p>
     </div>
-    <div class="col-7 bg-image bg-plant">
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{ page.banner_image }}');">
     </div>
 </section>
 
@@ -45,4 +47,17 @@ team:
         {% endfor %}
 
     </div>
+</section>
+
+<!---------------- Youtube video ---------------->
+<section class="padded bg-green center">
+    <h2 class="editable"> Look how fantastic life can be </h2>
+    <p class="emphasis editable"> Hockey is powerful. </p>
+
+    <div class="padded-2">
+        <div class='embed-container'>
+            <iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe>
+        </div>
+    </div>
+
 </section>

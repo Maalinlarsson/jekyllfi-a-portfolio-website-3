@@ -119,7 +119,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -177,6 +177,11 @@ a:hover { color: #a2745c; }
     max-width: 55%;
     margin-left: -3vw;
 }
+
+.emphasis {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 /*---------------- Header and footer styles ----------------*/
 header: { 
     padding: 2% 5%; 
@@ -221,6 +226,25 @@ footer a:hover {
 
 .bg-mockup {
     background-image: url('/images/mockup.jpg');
+}
+
+/*---------------- Responsive video ----------------*/
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
 }
 
 /*---------------- Media query ----------------*/
