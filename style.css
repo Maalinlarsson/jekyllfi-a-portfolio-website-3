@@ -93,6 +93,19 @@ html { scroll-behavior: smooth; }
 .center                 { text-align: center;                }
 .right                  { text-align: right;                 }
 
+.capped-width { 
+    max-width: 1000px;
+margin: auto;
+}
+
+.capped-width-narrow {
+    max-width: 900px;
+    margin: auto;
+}
+
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+}
 /*---------------- Typography styles ----------------*/
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -186,6 +199,10 @@ footer a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('/images/plant.jpg');
+}
+
+.profile-picture {
+    border-radius: 100%;
 }
 
 .bg-plant {
