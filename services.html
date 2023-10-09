@@ -1,7 +1,58 @@
 ---
 layout: default
+features:
+ - title: Beautiful Designs
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia, assumenda reprehenderit consequatur neque temporibus.
+   featured_image: /images/placeholder-project.png
+ - title: Optmized Builds
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia, assumenda reprehenderit consequatur neque temporibus.
+   featured_image: /images/placeholder-project.png
 ---
 
+<!---------------- Banner section ---------------->
+<section class="bg-image bg-plant-2 grid-middle-right padded-md tall-70">
+    <div class="col-6_sm-10 editable right">
+        <h2> Our Services </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minima nisi cum? Ipsa saepe, minus, sit amet ipsam impedit asperiores quidem numquam expedita temporibus cum. Aliquam ipsum illo eos sed. </p>
+    </div>
+</section>
+
+<!---------------- Text column grid ---------------->
+<section class="padded-md bg-green grid">
+    <div class="col-4_sm-12 padded-1">
+        <h3> Design. </h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum magni facere modi eum earum eligendi doloribus voluptate veritatis laudantium. Repellendus culpa optio tempora aut id pariatur minus nisi earum? </p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+        <h3> Build. </h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum magni facere modi eum earum eligendi doloribus voluptate veritatis laudantium. Repellendus culpa optio tempora aut id pariatur minus nisi earum? </p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+        <h3> Optimise. </h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum magni facere modi eum earum eligendi doloribus voluptate veritatis laudantium. Repellendus culpa optio tempora aut id pariatur minus nisi earum? </p>
+    </div>
+    <div class="col-4_sm-12 padded-1 center">
+        <a href="/contact.html" class="button"> Get in touch </a>
+    </div>
+</section>    
+
+<!---------------- Newsletter sign up ---------------->
+{% include newsletter-signup.html %}
+
+<!---------------- Featured ---------------->
 <section>
-    SERVICES
+
+    {% for item in page.features %}
+
+    <div class="grid flex-flip-alternate">
+        <div class="col-5_sm-12-middle padded-md">
+            <h3> {{ item.title }} </h3>
+            <p> {{ item.description }} </p>
+        </div>
+        <div class="col-7_sm-12-middle padded-md">
+            <img src="{{ item.featured_image }}" alt="{{ item.title }}">
+    </div>
+
+    {% endfor %}
+
 </section>
