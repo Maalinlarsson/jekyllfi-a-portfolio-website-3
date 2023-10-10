@@ -3,7 +3,7 @@ NOTES
 
 Colors:
 rust: #c29880;
-dark-rust: #a2745c;
+dark: #a2745c;
 green: #9b9b81; 
 */
 
@@ -42,7 +42,7 @@ html { scroll-behavior: smooth; }
 
 .padded-l               { padding-left: 5%;                  }
 .padded-r               { padding-right: 5%;                 }
-.padded-l-0             { padding-left: 0:                   }
+.padded-l-0             { padding-left: 0;                   }
 .padded-r-0             { padding-right: 0;                  }
 
 .padded-0               { padding: 0;                        }
@@ -190,7 +190,7 @@ a:hover { color: var(--dark); }
 }
 
 /*---------------- Header and footer styles ----------------*/
-header: { 
+header { 
     padding: 2% 5%; 
 }
 

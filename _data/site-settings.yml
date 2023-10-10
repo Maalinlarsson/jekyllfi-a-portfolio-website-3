@@ -1,6 +1,5 @@
 design:
-  rust: '#c29880'
-  dark: '#a2745c'
-  green: '#9b9b81' 
-  dark-rust: '#d3b4a2'
-
+  rust_color: '#c29880'
+  dark_color: '#a2745c'
+  green_color: '#9b9b81' 
+  dark-rust_color: '#d3b4a2'
