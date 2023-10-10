@@ -59,13 +59,16 @@ about-video-id: SECcXUlxcYs
 </section>
 
 <!---------------- Youtube video ---------------->
-<section class="padded bg-green center">
+<section class="padded-md bg-green center">
     <h2 class="editable"> Look how fantastic life can be </h2>
     <p class="emphasis editable"> Hockey is powerful. </p>
 
-    <div class="padded-2">
-        <div class='embed-container'>
-            <iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe>
+    <!-- Min video blev för stor så jag använde capped-width även fast hon inte gjorde -->
+    <div class="capped-width"> 
+        <div class="padded-2">
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
