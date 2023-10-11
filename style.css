@@ -14,7 +14,7 @@ green: #9b9b81;
     box-sizing: border-box;
  }
 
- img { max-width: 100%; }
+img { max-width: 100%; }
 
 [class*=grid] {
     margin:0;
