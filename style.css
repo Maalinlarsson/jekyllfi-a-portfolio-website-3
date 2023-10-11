@@ -178,12 +178,6 @@ a:hover { color: var(--dark); }
     margin-left: 1rem;
 }
 
-/* .right-arrow {
-    margin-top: 0.6rem;
-    max-width: 55%;
-    margin-left: -3vw;
-} */
-
 .emphasis {
     font-size: 1.1rem;
     font-weight: 400;
